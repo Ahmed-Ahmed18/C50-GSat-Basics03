@@ -81,11 +81,18 @@ class Program
         //}
         #endregion
         #region Question11
-        int pages = 464;
+        //int pages = 464;
 
-        string result = pages > 300 ? "Long Book" : "Short Book";
+        //string result = pages > 300 ? "Long Book" : "Short Book";
 
-        Console.WriteLine(result);
+        //Console.WriteLine(result);
+        #endregion
+        #region Question12
+        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+        for (int i = 0; i < books.Length; i++)
+        {
+            Console.WriteLine($"{i+1}.{books[i]}");
+        }
         #endregion
 
     }
