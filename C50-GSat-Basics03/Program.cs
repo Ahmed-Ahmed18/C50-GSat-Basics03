@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.Text;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -11,10 +13,16 @@
         //Console.WriteLine(upperTitle);
         #endregion
         #region Question2
-        string tittle1 = "Clean Code";
-        string tittle2 = "Clean Code";
+        //string tittle1 = "Clean Code";
+        //string tittle2 = "Clean Code";
 
-        Console.WriteLine(ReferenceEquals(tittle1, tittle2));
+        //Console.WriteLine(ReferenceEquals(tittle1, tittle2));
+        #endregion
+        #region Question3
+        StringBuilder books = new StringBuilder();
+        books.Append("Book List");
+        books.Append("- Updated");
+        Console.WriteLine(books);
         #endregion
     }
 }
