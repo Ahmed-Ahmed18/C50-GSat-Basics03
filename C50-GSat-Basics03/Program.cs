@@ -66,19 +66,26 @@ class Program
 
         #endregion
         #region Question10
-        string tittle = "Refactoring";
-        switch (tittle)
-        {
-            case "Clean Code":
-                Console.WriteLine("Great choice!");
-                break;
-            case "Refactoring":
-                Console.WriteLine("Nice pick!");
-                break;
-            default:
-                Console.WriteLine("Never heard of it");
-                break;
-        }
+        //string tittle = "Refactoring";
+        //switch (tittle)
+        //{
+        //    case "Clean Code":
+        //        Console.WriteLine("Great choice!");
+        //        break;
+        //    case "Refactoring":
+        //        Console.WriteLine("Nice pick!");
+        //        break;
+        //    default:
+        //        Console.WriteLine("Never heard of it");
+        //        break;
+        //}
+        #endregion
+        #region Question11
+        int pages = 464;
+
+        string result = pages > 300 ? "Long Book" : "Short Book";
+
+        Console.WriteLine(result);
         #endregion
 
     }
