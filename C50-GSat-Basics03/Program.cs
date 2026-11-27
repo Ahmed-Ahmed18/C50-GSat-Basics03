@@ -37,9 +37,16 @@ class Program
         //Console.WriteLine("Books: "+ tittle +" Pages: "+pages);
         #endregion
         #region Question6
+        //string tittle = "Clean Code";
+        //int pages = 464;
+        //Console.WriteLine($"Books: {tittle}, pages: {pages}");
+        #endregion
+        #region Question7
         string tittle = "Clean Code";
         int pages = 464;
-        Console.WriteLine($"Books: {tittle}, pages: {pages}");
+        string sentence = string.Format("Book: {0},\nPages: {1}", tittle, pages);
+
+        Console.WriteLine(sentence);     
         #endregion
     
     }
