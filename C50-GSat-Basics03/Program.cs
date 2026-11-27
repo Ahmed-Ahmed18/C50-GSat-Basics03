@@ -25,11 +25,16 @@ class Program
         //Console.WriteLine(books);
         #endregion
         #region Question4
-        StringBuilder books = new StringBuilder();
-        books.Append("Book List");
-        books.Append("- Updated");
-        books.Replace("Book List","Library");
-        Console.WriteLine(books);
+        //StringBuilder books = new StringBuilder();
+        //books.Append("Book List");
+        //books.Append("- Updated");
+        //books.Replace("Book List", "Library");
+        //Console.WriteLine(books);
+        #endregion
+        #region Question5
+        string tittle = "Clean Code";
+        int pages = 464;
+        Console.WriteLine("Books: "+ tittle +" Pages: "+pages);
         #endregion
     }
 }
