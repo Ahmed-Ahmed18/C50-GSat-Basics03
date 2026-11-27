@@ -121,13 +121,26 @@ class Program
         //}
         #endregion
         #region Question16
+        //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+        //foreach (string book in books)
+        //{
+        //    if (book == "Refactoring")
+        //    {
+        //        break;
+        //    }
+
+        //    Console.WriteLine(book);
+        //}
+        #endregion
+        #region Question17
         string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
         foreach (string book in books)
         {
-            if (book == "Refactoring")
+            if (book == "The Pragmatic Programmer")
             {
-                break;
+                continue;
             }
 
             Console.WriteLine(book);
