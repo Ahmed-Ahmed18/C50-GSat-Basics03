@@ -1,10 +1,17 @@
-﻿using System.Text;
+﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Channels;
 
 class Program
 {
     static void Main(string[] args)
     {
         #region Question1
+        //Declare string title = "clean code";. Call title.ToUpper() and store it in a new variable upperTitle. Print
+        //both title and upperTitle to show that title did not change.
+
         //string tittle = "clean code";
         //string upperTitle = tittle.ToUpper();
 
@@ -13,18 +20,27 @@ class Program
         //Console.WriteLine(upperTitle);
         #endregion
         #region Question2
+        //Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
+        //to check if they point to the same object in memory.
+
         //string tittle1 = "Clean Code";
         //string tittle2 = "Clean Code";
 
         //Console.WriteLine(ReferenceEquals(tittle1, tittle2));
         #endregion
         #region Question3
+        //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+        //object.Print the final result.
+
         //StringBuilder books = new StringBuilder();
         //books.Append("Book List");
         //books.Append("- Updated");
         //Console.WriteLine(books);
         #endregion
         #region Question4
+        //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+        //Print the result.
+
         //StringBuilder books = new StringBuilder();
         //books.Append("Book List");
         //books.Append("- Updated");
@@ -32,16 +48,21 @@ class Program
         //Console.WriteLine(books);
         #endregion
         #region Question5
+        //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
+        //Pages: 464" using the + operator
         //string tittle = "Clean Code";
         //int pages = 464;
         //Console.WriteLine("Books: "+ tittle +" Pages: "+pages);
         #endregion
         #region Question6
+        //Build the same sentence as above, but using string interpolation ($"...").
         //string tittle = "Clean Code";
         //int pages = 464;
         //Console.WriteLine($"Books: {tittle}, pages: {pages}");
         #endregion
         #region Question7
+        //Build the same sentence again, but using string.Format().
+
         //string tittle = "Clean Code";
         //int pages = 464;
         //string sentence = string.Format("Book: {0},\nPages: {1}", tittle, pages);
@@ -49,6 +70,8 @@ class Program
         //Console.WriteLine(sentence);     
         #endregion
         #region Question8
+        //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+        //300, otherwise prints "Short Book".
         //int pages = 464;
         //if (pages > 300)
         //    Console.WriteLine("Long Book");
@@ -56,6 +79,9 @@ class Program
         //    Console.WriteLine("Short Book");
         #endregion
         #region Question9
+        //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+        //greater than 300 and isAvailable is true.Use the && operator.
+
         //int pages = 464;
         //bool isAvailable = true;
 
@@ -66,6 +92,9 @@ class Program
 
         #endregion
         #region Question10
+        //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+        //"Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.
+
         //string tittle = "Refactoring";
         //switch (tittle)
         //{
@@ -81,6 +110,9 @@ class Program
         //}
         #endregion
         #region Question11
+        //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
+        //variable sizeLabel(same rule as question 8: long if pages > 300).
+
         //int pages = 464;
 
         //string result = pages > 300 ? "Long Book" : "Short Book";
@@ -88,6 +120,9 @@ class Program
         //Console.WriteLine(result);
         #endregion
         #region Question12
+        //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+        //to print each book with its position number, like 1.Clean Code.
+
         //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
         //for (int i = 0; i < books.Length; i++)
         //{
@@ -95,6 +130,8 @@ class Program
         //}
         #endregion
         #region Question13
+        //Using the same books array, use a while loop to print every book title.
+
         //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
         //int i = 0;
         //while (i<books.Length)
@@ -104,6 +141,8 @@ class Program
         //}
         #endregion
         #region Question14
+        //Write a do-while loop that prints "Checking book..." exactly 3 times.
+
         //int count = 0;
 
         //do
@@ -114,6 +153,8 @@ class Program
         //while (count < 3);
         #endregion
         #region Question15
+        //Using the same books array, use a foreach loop to print every book title.
+
         //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
         //foreach (string book in books)
         //{
@@ -121,6 +162,9 @@ class Program
         //}
         #endregion
         #region Question16
+        //Using the same books array, loop through it and print each title, but stop completely (break) once
+        //you reach "Refactoring".
+
         //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
         //foreach (string book in books)
@@ -134,6 +178,9 @@ class Program
         //}
         #endregion
         #region Question17
+        //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+        //continue, don't stop the loop).
+
         //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
         //foreach (string book in books)
@@ -147,6 +194,9 @@ class Program
         //}
         #endregion
         #region Question18
+        //Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+        //use return to exit the method early instead of printing anything.
+
         string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
         PrintFirstBook();
