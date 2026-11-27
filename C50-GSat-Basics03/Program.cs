@@ -114,9 +114,22 @@ class Program
         //while (count < 3);
         #endregion
         #region Question15
+        //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+        //foreach (string book in books)
+        //{
+        //    Console.WriteLine(book);
+        //}
+        #endregion
+        #region Question16
         string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
         foreach (string book in books)
         {
+            if (book == "Refactoring")
+            {
+                break;
+            }
+
             Console.WriteLine(book);
         }
         #endregion
