@@ -95,13 +95,23 @@ class Program
         //}
         #endregion
         #region Question13
-        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-        int i = 0;
-        while (i<books.Length)
+        //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+        //int i = 0;
+        //while (i<books.Length)
+        //{
+        //    Console.WriteLine(books[i]);
+        //    i++;
+        //}
+        #endregion
+        #region Question14
+        int count = 0;
+
+        do
         {
-            Console.WriteLine(books[i]);
-            i++;
+            Console.WriteLine("Checking book...");
+            count++;
         }
+        while (count < 3);
         #endregion
     }
 }
