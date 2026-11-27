@@ -3,12 +3,18 @@
     static void Main(string[] args)
     {
         #region Question1
-        string tittle = "clean code";
-        string upperTitle = tittle.ToUpper();
+        //string tittle = "clean code";
+        //string upperTitle = tittle.ToUpper();
 
-        //tittle unchanged because string is immutable 
-        Console.WriteLine(tittle.GetHashCode());
-        Console.WriteLine(upperTitle);
+        ////tittle unchanged because string is immutable 
+        //Console.WriteLine(tittle.GetHashCode());
+        //Console.WriteLine(upperTitle);
+        #endregion
+        #region Question2
+        string tittle1 = "Clean Code";
+        string tittle2 = "Clean Code";
+
+        Console.WriteLine(ReferenceEquals(tittle1, tittle2));
         #endregion
     }
 }
