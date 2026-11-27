@@ -49,11 +49,21 @@ class Program
         //Console.WriteLine(sentence);     
         #endregion
         #region Question8
+        //int pages = 464;
+        //if (pages > 300)
+        //    Console.WriteLine("Long Book");
+        //else
+        //    Console.WriteLine("Short Book");
+        #endregion
+        #region Question9
         int pages = 464;
-        if (pages > 300)
-            Console.WriteLine("Long Book");
+        bool isAvailable = true;
+
+        if (pages > 300 && isAvailable == true)
+            Console.WriteLine("You can borrow this book");
         else
-            Console.WriteLine("Short Book");
+            Console.WriteLine("You canot borrow this book");
+
         #endregion
 
     }
