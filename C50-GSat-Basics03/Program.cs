@@ -104,14 +104,23 @@ class Program
         //}
         #endregion
         #region Question14
-        int count = 0;
+        //int count = 0;
 
-        do
-        {
-            Console.WriteLine("Checking book...");
-            count++;
-        }
-        while (count < 3);
+        //do
+        //{
+        //    Console.WriteLine("Checking book...");
+        //    count++;
+        //}
+        //while (count < 3);
         #endregion
+        #region Question15
+        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+        foreach (string book in books)
+        {
+            Console.WriteLine(book);
+        }
+        #endregion
+
+
     }
 }
