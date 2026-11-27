@@ -32,9 +32,15 @@ class Program
         //Console.WriteLine(books);
         #endregion
         #region Question5
+        //string tittle = "Clean Code";
+        //int pages = 464;
+        //Console.WriteLine("Books: "+ tittle +" Pages: "+pages);
+        #endregion
+        #region Question6
         string tittle = "Clean Code";
         int pages = 464;
-        Console.WriteLine("Books: "+ tittle +" Pages: "+pages);
+        Console.WriteLine($"Books: {tittle}, pages: {pages}");
         #endregion
+    
     }
 }
