@@ -56,14 +56,29 @@ class Program
         //    Console.WriteLine("Short Book");
         #endregion
         #region Question9
-        int pages = 464;
-        bool isAvailable = true;
+        //int pages = 464;
+        //bool isAvailable = true;
 
-        if (pages > 300 && isAvailable == true)
-            Console.WriteLine("You can borrow this book");
-        else
-            Console.WriteLine("You canot borrow this book");
+        //if (pages > 300 && isAvailable == true)
+        //    Console.WriteLine("You can borrow this book");
+        //else
+        //    Console.WriteLine("You canot borrow this book");
 
+        #endregion
+        #region Question10
+        string tittle = "Refactoring";
+        switch (tittle)
+        {
+            case "Clean Code":
+                Console.WriteLine("Great choice!");
+                break;
+            case "Refactoring":
+                Console.WriteLine("Nice pick!");
+                break;
+            default:
+                Console.WriteLine("Never heard of it");
+                break;
+        }
         #endregion
 
     }
